@@ -4,10 +4,10 @@ import pubchempy as pcp
 
 
 #Generating a random list of numbers later used as PubChem compound identifiers (CID).
-random_numbers = random.sample(range(1,112406991),5000) #generating 5000 numbers between 1 and 112406991 (=Compounds on PubChem)
+random_numbers = random.sample(range(1,112406991),5000) #generating 5000 random numbers between 1 and 112406991 (number of Compounds on PubChem)
 #print(random_numbers)
 
-#Generating the list of SMILES through the previusly generated numbers (will take some time)
+#Generating the list of SMILES through the previusly generated numbers
 list_of_smiles = [] # opening an empty list
 
 #The corresponding smiles is searched for every element in 'cid_list'
