@@ -12,7 +12,7 @@ list_of_smiles = [] # opening an empty list
 
 #The corresponding smiles is searched for every element in 'cid_list'
 for x in random_numbers: 
-    cid_list = pcp.Compound.from_cid(x) #eEements in 'random_numbers' are transferred to CIDs
+    cid_list = pcp.Compound.from_cid(x) #Elements in 'random_numbers' are transferred to CIDs
     list_of_smiles.append (cid_list.isomeric_smiles) #CIDs are transferred to SMILES
     #print (len(list_of_smiles) #Just if the progress should be shown
 
